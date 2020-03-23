@@ -8,7 +8,12 @@
     "storage"
   ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "background/lib/RTCMultiConnection.min.js",
+      "background/lib/socket.io.js",
+      "background/background.js",
+      "background/webRTC.js"
+    ],
     "persistent": false
   },
   "options_page": "options.html",
@@ -27,5 +32,6 @@
     "48": "media/logo_64.png",
     "128": "media/logo_128.png"
   },
+  "minimum_chrome_version":"34",
   "manifest_version": 2
 }
